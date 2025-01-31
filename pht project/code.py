@@ -10,4 +10,4 @@ pht = MS8607(i2c)
 #main
 while True:
         print(pht.pressure, ", ", (int(pht.relative_humidity * 100) / 100) ,", ",  (int(((9/5) * pht.temperature + 32) * 100)) / 100)
-        time.sleep(1)
+        time.sleep(30)
