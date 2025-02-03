@@ -43,7 +43,7 @@ void setup() {
   text("62 deg", 3, 565);
   //seconds labels
   fill(0, 0, 0);
-  for (int i = 50; width < 1; i+= 50) {
+  for (int i = 50; i < width; i+= 50) {
     txt = String.valueOf(num);
     text(txt, i, 563);
     num += 30;
