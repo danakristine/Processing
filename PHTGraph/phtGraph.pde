@@ -98,6 +98,7 @@ void draw() {
         t2 = mapValTemp;
       }
       stroke(255, 0, 0);
+      strokeWeight(3);
       line(x1, t1, x2, t2);
       x1 = x2;
       t1 = t2;
@@ -111,6 +112,7 @@ void draw() {
         h2 = mapValHum;
       }
       stroke(0, 128, 0);
+      strokeWeight(3);
       line(x3, h1, x4, h2);
       x3 = x4;
       h1 = h2;
@@ -124,6 +126,7 @@ void draw() {
         p2 = mapValPres;
       }
       stroke(0, 0, 255);
+      strokeWeight(3);
       line(x5, p1, x6, p2);
       x5 = x6;
       p1 = p2;
