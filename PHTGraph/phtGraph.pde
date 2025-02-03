@@ -45,7 +45,7 @@ void setup() {
   fill(0, 0, 0);
   for (int i = 100; i < width; i+= 50) {
     txt = String.valueOf(num);
-    text(txt, i -5 , 563);
+    text(txt, i -5, 563);
     num += 30;
   }
 }
@@ -87,8 +87,8 @@ void draw() {
       float press = val1;
       float mapValPres = 600 - map(press, 850, 1100, 0, 550);
       print(" pressure " + press + " map " + mapValPres);// 850 - 1100 pressure
-      
-      
+
+
       //temp line
       x2 = x1 + 50;
       if (t1 == 0 && t2 == 0) {
@@ -101,7 +101,7 @@ void draw() {
       line(x1, t1, x2, t2);
       x1 = x2;
       t1 = t2;
-      
+
       //humidity line
       x4 = x3 + 50;
       if (h1 == 0 && h2 == 0) {
@@ -114,7 +114,7 @@ void draw() {
       line(x3, h1, x4, h2);
       x3 = x4;
       h1 = h2;
-      
+
       //pressure line
       x6 = x5 + 50;
       if (p1 == 0 && p2 == 0) {
